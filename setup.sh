@@ -132,7 +132,7 @@ secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
 }
 start=$(date +%s)
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 
@@ -321,7 +321,7 @@ wget -q -O /usr/bin/xp https://raw.githubusercontent.com/jalgitap/mpek/main/dll/
 wget -q -O /usr/bin/info https://raw.githubusercontent.com/jalgitap/mpek/main/dll/info.sh && chmod +x /usr/bin/info
 
 #set time zone
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 wget -q -O /usr/bin/.ascii-home "https://raw.githubusercontent.com/jalgitap/mpek/main/resources/ascii-home"
 cat> /root/.profile << END
@@ -408,7 +408,7 @@ echo "   - SS-OBFS HTTP            : 3443-3543" | tee -a log-install.txt
 echo "   - Shadowsocks-R           : 1443-1543" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone                : Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
+echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
 echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
 echo "   - IPtables                : [ON]"  | tee -a log-install.txt
