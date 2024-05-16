@@ -270,7 +270,7 @@ Save_And_Exit () {
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/jagitap/LOG-USER
-    git push -f https://isitokengitap@github.com/jalgitap/LOG-USER.git &> /dev/null
+    git push -f https://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@github.com/jalgitap/LOG-USER.git &> /dev/null
 }
 
 if [ ! -d "/etc/user-update/" ]; then
