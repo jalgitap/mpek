@@ -634,7 +634,8 @@ yellow "V2Ray/Vless"
 yellow "Trojan-GFW"
 yellow "Trojan-GO install successfully"
 
-mv /root/domain /etc/v2ray/ >/dev/null 2>&1
+#mv /root/domain /etc/v2ray/ >/dev/null 2>&1
+cp /root/domain /etc/v2ray/ >/dev/null 2>&1
 if [ -f /root/scdomain ];then
 rm /root/scdomain > /dev/null 2>&1
 fi
